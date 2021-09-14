@@ -1,3 +1,26 @@
-h1 {
-   color: red;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Urbanist', sans-serif;
+}
+
+body {
+   background-color: #F6F8F9;
+}
+
+#logo {
+   padding: 8px 0 8px 20px;
+   vertical-align: -25px;
+}
+
+#logo-text {
+   margin-left: 5px;
+   font-size: 30px;
+   font-weight: 900;
+   color: #031732;
+}
+
+header {
+   background-color: #FFF;
 }
