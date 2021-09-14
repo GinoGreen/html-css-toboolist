@@ -9,6 +9,7 @@ body {
    background-color: #F6F8F9;
 }
 
+/* HEADER */
 #logo {
    padding: 8px 0 8px 20px;
    vertical-align: -25px;
@@ -21,6 +22,35 @@ body {
    color: #031732;
 }
 
+.container {
+   margin: auto;
+   width: 65%;
+   background-color: #FFF;
+}
+
 header {
    background-color: #FFF;
+   margin-bottom: 45px;
+}
+
+/* MAIN */
+.container .header-container {
+   padding: 10px 60px;
+}
+
+.header-container .button {
+   padding: 6px 10px;
+   font-size: 15px;
+   border-radius: 7px;
+   display: inline-block;
+}
+
+.button.task {
+   background-color: #47ADF1;
+   color: #FFF;
+}
+
+.button.section {
+   border: 1px solid #C8CDD2;
+   color: #979B9F;
 }
