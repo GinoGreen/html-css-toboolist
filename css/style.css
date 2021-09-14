@@ -102,3 +102,54 @@ header {
    border: 2px solid #E9453D;
    border-radius: 50%;
 }
+
+/* Etichette */
+.area .element-list .label {
+   margin-left: 5px;
+   padding: 10px;
+   font-size: 12px;
+   border-radius: 10px;
+   display: inline-block;
+}
+
+.label.editorial::before{
+   content: "Editorial";
+   padding: 6px 10px;
+   background-color: #45ABEA;
+   border-radius: 15px;
+}
+
+.label.q1-goals::before{
+   content: "Q1 Goals";
+   padding: 6px 10px;
+   background-color: #9C72E4;
+   border-radius: 15px;
+}
+
+.label.recruiting::before{
+   content: "Recruiting";
+   padding: 6px 10px;
+   background-color: #64C0A9;
+   border-radius: 15px;
+}
+
+.label.mobile::before{
+   content: "Mobile";
+   padding: 6px 10px;
+   background-color: #F29E33;
+   border-radius: 15px;
+}
+
+.label.website::before{
+   content: "Website";
+   padding: 6px 10px;
+   background-color: #D863A1;
+   border-radius: 15px;
+}
+
+.label.sales::before{
+   content: "Sales";
+   padding: 6px 10px;
+   background-color: #B0C926;
+   border-radius: 15px;
+}
