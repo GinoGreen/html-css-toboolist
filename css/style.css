@@ -23,34 +23,82 @@ body {
 }
 
 .container {
-   margin: auto;
+   margin: 70px auto;
    width: 65%;
    background-color: #FFF;
 }
 
+.b-radius {
+   border-radius: 7px;
+}
+
 header {
    background-color: #FFF;
-   margin-bottom: 45px;
 }
 
 /* MAIN */
+
+/* header container */
 .container .header-container {
    padding: 10px 60px;
+   border-bottom: 2px solid #F6F8F9;
 }
 
 .header-container .button {
    padding: 6px 10px;
    font-size: 15px;
-   border-radius: 7px;
    display: inline-block;
 }
 
-.button.task {
+.button.add-task {
    background-color: #47ADF1;
    color: #FFF;
 }
 
-.button.section {
+.button.add-section {
    border: 1px solid #C8CDD2;
    color: #979B9F;
+}
+
+/* main container */
+.container .main-container {
+   padding: 20px 60px;
+}
+
+.main-container .area {
+   margin: 20px 0;
+}
+
+.main-container .area h3{
+   font-size: 23px;
+   font-weight: 700;
+}
+
+.area h3::before {
+   margin-right: 5px;
+   content: " \25BC ";
+   font-size: 15px;
+}
+
+.area .element-list {
+   padding: 10px 0;
+   display: block;
+}
+
+.main-container .area .done::before {
+   content: "\2713";
+   margin-right: 6px;
+   padding: 3px 7px;
+   color: #63BFA8;
+   border: 2px solid #63BFA8;
+   border-radius: 50%;
+}
+
+.main-container .area .to-do::before {
+   content: "\2716";
+   margin-right: 6px;
+   padding: 3px 7px;
+   color: #E9453D;
+   border: 2px solid #E9453D;
+   border-radius: 50%;
 }
