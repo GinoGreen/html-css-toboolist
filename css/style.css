@@ -9,31 +9,38 @@ body {
    background-color: #F6F8F9;
 }
 
-/* HEADER */
-#logo {
-   padding: 8px 0 8px 20px;
-   vertical-align: -25px;
-}
-
-#logo-text {
-   margin-left: 5px;
-   font-size: 30px;
-   font-weight: 900;
-   color: #031732;
-}
-
 .container {
    margin: 70px auto;
    width: 65%;
    background-color: #FFF;
 }
 
-.b-radius {
-   border-radius: 7px;
+.button {
+   padding: 6px 10px;
+   font-size: 15px;  
+   background-color: #FFF;
+   display: inline-block;
+   cursor: pointer;
 }
 
+/* HEADER */
 header {
+   padding: 8px 20px;
    background-color: #FFF;
+}
+
+#logo {
+   vertical-align: -16px;
+}
+
+#logo-text {
+   font-size: 30px;
+   font-weight: 900;
+   color: #031732;
+}
+
+.b-radius {
+   border-radius: 7px;
 }
 
 /* MAIN */
@@ -44,15 +51,10 @@ header {
    border-bottom: 2px solid #F6F8F9;
 }
 
-.header-container .button {
-   padding: 6px 10px;
-   font-size: 15px;
-   display: inline-block;
-}
-
 .button.add-task {
    background-color: #47ADF1;
    color: #FFF;
+   border: 1px solid #47ADF1;
 }
 
 .button.add-section {
@@ -85,22 +87,23 @@ header {
    display: block;
 }
 
-.main-container .area .done::before {
-   content: "\2713";
+.area .element-list::before {
    margin-right: 6px;
    padding: 3px 7px;
-   color: #63BFA8;
-   border: 2px solid #63BFA8;
+   border: 2px solid;
    border-radius: 50%;
+}
+
+.main-container .area .done::before {
+   content: "\2713";
+   color: #63BFA8;
+   border-color: #63BFA8;
 }
 
 .main-container .area .to-do::before {
    content: "\2716";
-   margin-right: 6px;
-   padding: 3px 7px;
    color: #E9453D;
-   border: 2px solid #E9453D;
-   border-radius: 50%;
+   border-color: #E9453D;
 }
 
 /* Etichette */
